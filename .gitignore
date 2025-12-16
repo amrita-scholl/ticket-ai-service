@@ -1,0 +1,109 @@
+####################################
+# OS / System files
+####################################
+.DS_Store
+Thumbs.db
+desktop.ini
+
+####################################
+# Python
+####################################
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Python packaging
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Python dotenv / secrets
+.env
+.env.*
+!.env.example
+
+####################################
+# Java / Maven / Gradle
+####################################
+target/
+*.class
+*.jar
+*.war
+*.ear
+
+# Maven
+.mvn/
+mvnw
+mvnw.cmd
+dependency-reduced-pom.xml
+
+# Gradle
+.gradle/
+build/
+
+####################################
+# Flowable / Logs
+####################################
+*.log
+logs/
+flowable-db/
+flowable-data/
+
+####################################
+# IDEs
+####################################
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# VS Code
+.vscode/
+.history/
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+####################################
+# Node (if frontend exists)
+####################################
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+####################################
+# Docker
+####################################
+*.pid
+docker-compose.override.yml
+
+####################################
+# Security / Keys
+####################################
+*.pem
+*.key
+*.crt
+*.p12
+*.keystore
+*.jks
+
+####################################
+# Misc
+####################################
+coverage/
+.cache/
+tmp/
+temp/
