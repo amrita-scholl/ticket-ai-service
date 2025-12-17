@@ -6,7 +6,7 @@ load_dotenv()
 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
-def analyze_ticket(ticket_text: str):
+def analyze_ticket(ticket: str):
     prompt = f"""
 You are an AI system supporting a BPM workflow engine.
 
@@ -19,7 +19,7 @@ expectedResolutionHours: number
 recommendedAction: AUTO_ASSIGN | ESCALATE_L2 | ESCALATE_L3 | MANUAL_REVIEW
 
 Ticket:
-{ticket_text}
+{ticket}
 
 Return ONLY JSON. No explanation.
 """

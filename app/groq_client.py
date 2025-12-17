@@ -6,7 +6,7 @@ load_dotenv()
 
 client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
-def analyze_ticket(ticket_text: str) -> str:
+def analyze_ticket(ticket: str) -> str:
     prompt = f"""
 You are an AI decision engine for a BPM workflow system.
 
@@ -19,7 +19,7 @@ expectedResolutionHours: number
 recommendedAction: AUTO_ASSIGN | ESCALATE_L2 | ESCALATE_L3 | MANUAL_REVIEW
 
 Ticket:
-{ticket_text}
+{ticket}
 
 Return ONLY JSON. No explanation.
 """
